@@ -27,6 +27,7 @@
     /* Fonts weight */
     --font-medium: 500;
     --font-semi-bold: 600;
+    --font-bold: 700;
 
     /* Margins */
     --margin-1: .5rem;
@@ -269,9 +270,9 @@ img {
 .section-title {
     font-size: var(--h2-font-size);
     color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-bold);
     text-transform: uppercase;
-    letter-spacing: .35rem;
+    letter-spacing: .2rem;
     text-align: center;
     margin-bottom: var(--margin-3);
 }
@@ -528,6 +529,8 @@ img {
 .experience_title,
 .certificate_year {
     font-size: var(--h3-font-size);
+    background-color: var(--container-color);
+    padding: 1;
 }
 
 .education_studies,
@@ -535,6 +538,12 @@ img {
 .certificate_title {
     font-size: var(--small-font-size);
     color: var(--title-color);
+    width: 430px;
+}
+
+.experience_details {
+    flex-direction: row;
+    display: flex;
 }
 
 .education_year,
@@ -560,7 +569,7 @@ img {
 
 .skills_text {
     display: inline-block;
-    width: 100px;
+    width: 120px;
 }
 
 .skills_box {
@@ -626,9 +635,17 @@ img {
 
 /* Interests */
 
+.interests_section {
+    max-width: 500px;
+    overflow-wrap: normal;
+}
+
 .interests_container {
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: var(--margin-2);
+    display: inline-block;
+}
+
+.interest {
+    display: inline;
 }
 
 .interests_content {
@@ -665,6 +682,14 @@ img {
 .show-scroll {
     visibility: visible;
     bottom: 5rem;
+}
+
+.experience-list {
+    list-style-type: disc;
+    margin-left: 12px;
+    margin-top: 10px;
+    display: block;
+    float: left;
 }
 
 /* Screen for small phones  */

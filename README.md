@@ -100,30 +100,12 @@ Then, open it from your favorite text editor or IDE, normally you should have th
 
 ### Configuration
 
-<details open>
-  <summary><b>Local server</b></summary>
-  <br>
-  As said before, to be able to use this project, you will have to be connected to a local server
-  
-  Plusieurs éditeurs de textes ont la fonctionnalité de local server (like VSCode, SublimeText, Atom, ...)
-
-  <p align="center">
-    <img alt="Live Server" src="previews/live-server.png" /></br>
-    <img alt="Go Live" src="previews/go-live.png" />
-    <img alt="Port 5500" src="previews/port-5500.png" />
-  </p>
-</details>
-
 <details close>
   <summary><b>Convert your profile picture into an url in Base64</b></summary>
   <br>
 
   To convert your image to a Base64 url, you can go to websites allowing this action to be carried out such as: [Base64 Image](https://www.base64-image.de/ "Go to Base64 Image") or [elmah.io](https://elmah.io/tools/base64-image-encoder "Go to elmah.io")
 
-  Plusieurs façons :
-
-  - Avec un serveur local (fichier main.js -> profile.txt)
-  - Sans serveur local (mettre url directement dans la src de l'image dans le fichier .html)
 
   Convert your logo image to Base64 and replace this :
 
@@ -145,19 +127,7 @@ by this :
 
 ## Usage
 
-### Put your informations
+### Put your information
 
 You can therefore modify the index.html file to put your information. If you want different icons, you can go to [Font Awesome](https://fontawesome.com/search?m=free&o=r "Go to Font Awesome") and select icons from a large selection of free and open-source icons
 
-### Customize your resume CV
-
-- changer palette couleur
-- changer police
-- changer icons Font Awesome
-
-## Examples
-
-## TodoList
-
-- Change html2pdf Version 0.8.0 -> 0.9.3
-- Création d'un fichier js dans lequel on met le contenu du CV
