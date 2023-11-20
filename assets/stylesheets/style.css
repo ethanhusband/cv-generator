@@ -261,6 +261,11 @@ img {
     height: auto;
 }
 
+a:visited { text-decoration: none; color:#403A3A; }
+a:hover { text-decoration: none; color:#403A3A; }
+a:focus { text-decoration: none; color:#403A3A; }
+a:hover, a:active { text-decoration: none; color:#403A3A }
+
 /* Class CSS */
 
 .section {
@@ -574,7 +579,7 @@ img {
 
 .skills_box {
     display: inline-block;
-    width: 150px;
+    width: 120px;
     height: 10px;
     border-radius: 6px;
     overflow: hidden;
@@ -641,22 +646,20 @@ img {
 }
 
 .interests_container {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .interest {
-    display: inline;
-}
-
-.interests_content {
+    width: 30px;
+    height: 75px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.interests_icon {
-    font-size: 1.2rem;
-    color: var(--text-color-light);
+    gap: 15px;
+    text-decoration: none !important;
 }
 
 .scrolltop {
@@ -690,6 +693,29 @@ img {
     margin-top: 10px;
     display: block;
     float: left;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.project {
+    width: 70px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.lyf-disclaimer {
+    font-size: 10px;
+    margin-top: 20px;
+    opacity: 0.3;
 }
 
 /* Screen for small phones  */
