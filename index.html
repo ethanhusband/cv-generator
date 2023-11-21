@@ -31,71 +31,8 @@
     </head>
 
     <body>
-        <header class="l-header" id="header">
-            <!-- Nav menu -->
-            <nav class="nav bd-container">
-                <a href="#" class="nav_logo">Ethan Husband</a>
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list">
 
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link active-link">
-                                <i class="fa-solid fa-house nav_icon"></i>Home
-                            </a>
-                        </li>
-
-                        <li class="nav_item">
-                            <a href="#profile" class="nav_link">
-                                <i class="fa-solid fa-user nav_icon"></i>Profile
-                            </a>
-                        </li>
-
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="fa-solid fa-computer nav_icon"></i>Skills
-                            </a>
-                        </li>
-
-                        <li class="nav_item">
-                            <a href="#languages" class="nav_link">
-                                <i class="fa-solid fa-comments nav_icon"></i>Languages
-                            </a>
-                        </li>
-
-                        <li class="nav_item">
-                            <a href="#experience" class="nav_link">
-                                <i class="fa-solid fa-briefcase nav_icon"></i>Experiences
-                            </a>
-                        </li>
-
-                        <li class="nav_item">
-                            <a href="#certificates" class="nav_link">
-                                <i class="fa-solid fa-graduation-cap nav_icon"></i>Certificates
-                            </a>
-                        </li>
-
-                        <li class="nav_item">
-                            <a href="#education" class="nav_link">
-                                <i class="fa-solid fa-book-bookmark nav_icon"></i>Education
-                            </a>
-                        </li>
-
-                        <li class="nav_item">
-                            <a href="#interests" class="nav_link">
-                                <i class="fa-solid fa-icons nav_icon"></i>Interests
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main bd-container">
+        <main class="l-main bd-container" id="cv">
             <!-- Resume CV -->
             <div class="resume" id="area-cv">
                 <div class="resume_left">
@@ -234,7 +171,7 @@
                     </section>
 
                     <!-- LANGUAGES -->
-                    <section class="languages section" id="languages">
+                    <section class="interests_section" id="interests">
                         <h2 class="section-title">Interests</h2>
 
                         <div class="interests_container">
@@ -283,7 +220,7 @@
                         </p>
                     </section>
 
-                    <hr />
+                    <hr class="section-breaker"/>
 
                     <!-- EXPERIENCE -->
                     <section class="experience section" id="experience">
@@ -301,7 +238,7 @@
                                         <div class="experience_company"><a href="https://www.energetiq.com.au/" target="_blank" class="social_link">Energetiq Australia</a> | Part Time</div>
                                         <div class="experience_year">Sep 2023 - present</div>
                                     </div>
-                                    <p class="experience_description">
+                                    <p class="experience-desc">
                                         Software Engineer at Energetiq Australia, a mature SaaS provider offering products such as NBV and Quantify, relied on by major Australian energy retailers.
                                         
                                     </p>
@@ -336,7 +273,7 @@
                                         </div>
                                         <div class="experience_year">Dec 2021 - Sep 2023</div>
                                     </div>
-                                    <p class="experience_description">
+                                    <p class="experience-desc">
                                         Hired as Full-Stack Developer for EVUp Charge, a start-up providing paywall and
                                         monitoring services to 100s of electric vehicle charging stations around Australia
                                     </p>
@@ -434,12 +371,7 @@
                                     <p>Dev Blog</p>
                                 </div>
                             </a>
-                            <a href="https://github.com/ethanhusband?tab=repositories" class="project-wrapper" target="_blank">
-                                <div class="project">
-                                    <img src="./assets/pictures/more.png"/>
-                                    <p>More</p>
-                                </div>
-                            </a>
+                            
                         </div>
                         <p class="lyf-disclaimer">* Code for Lyf is currently private and can be viewed upon request. It also has an iOS App!</p>
                     </section>
@@ -453,10 +385,7 @@
         </a>
 
         <!-- HTML2PDF.js -->
-            <!-- Version 0.8.0 -->
-        <!-- <script src="assets/javascripts/html2pdf.v0.8.0.bundle.min.js"></script> -->
-            <!-- Version 0.9.3 -->
-        <script src="assets/javascripts/html2pdf.v0.9.3.bundle.min.js"></script>
+        <script src="assets/javascripts/html2pdf.bundle.min.js"></script>
 
         <!-- Main Javascript file -->
         <script src="assets/javascripts/main.js"></script>

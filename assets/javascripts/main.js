@@ -2,21 +2,6 @@
 
 const img = document.getElementById("home-img");
 
-/*fetch('assets/pictures/profile.txt', {
-    mode: 'no-cors',
-    headers: {
-        'Access-Control-Allow-Origin':'*'
-    }
-})
-.then((response) => response.text())
-.then((result) => {
-    console.log('Success:', result);
-    //img.src = result;
-})
-.catch((error) => {
-    console.error('Error:', error);
-});*/
-
 /* Show Menu */
 
 const showMenu = (toggleId, navId) => {
@@ -159,8 +144,6 @@ function generateResume() {
       margin: 0,
       filename: "myResumeCV-dark.pdf",
       image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 4, useCORS: true },
-      jsPDF: { orientation: "portrait" },
     };
     html2pdf(areaCV, opt);
   } else {
@@ -169,8 +152,7 @@ function generateResume() {
       margin: 0,
       filename: "myResumeCV-light.pdf",
       image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 4, useCORS: true },
-      jsPDF: { orientation: "portrait" }, // add format: a4 to print to a4
+      pagebreak: { mode: ["avoid-all"] },
     };
     html2pdf(areaCV, opt);
   }
